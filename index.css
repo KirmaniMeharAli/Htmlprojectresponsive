@@ -1,0 +1,88 @@
+/* Main Layout */
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Section 1: Profile */
+.s1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 20px;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.s1 p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Section 2: Links */
+.s2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.s2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.s2 ul li {
+    margin: 15px;
+    padding: 15px;
+    background: black;
+    border: 2px solid black;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.s2 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Footer */
+.f1 {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    padding-right: 20px;
+}
+
+.f1 a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .s1, .s2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .f1 {
+        justify-content: center;
+    }
+}
